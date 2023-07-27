@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+h1, button {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+
+}
+
+main {
+  background-color: white;
+  
+  width: 42.8rem;
+
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  font-size: 1.6rem;
+  text-align: center;
+
+  border-radius: 5px;
+
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.80);
+}
+
+.screen1 h1{
+  color: #34355B;
+  font-size: 2.4rem;
+  font-weight: 700;
+ 
+}
+
+
+.screen1 p {
+  color: #34355B;
+  font-family: DM Sans;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  margin-top: 1.4rem;
+}
+
+.screen1 img{
+margin-top: 2.5rem;
+}
+
+
+
+.screen2 h1, .screen3 h1 {
+  color: #34355B;
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  margin-bottom: 1.7rem;
+}
+
+.screen2 p, .screen3 p {
+  color: #000;
+  font-family: Dancing Script;
+  font-size: 2.4rem;
+
+  margin-bottom: 1.7rem;
+
+  background-color: #E4EDF1;
+  box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50);
+  padding: 1rem;
+}
+
+.screen2 img, .screen3 img {
+  margin-bottom: 1.7rem;
+}
+
+.screen2 button, .screen3 button {
+  border: 0;
+  border-radius: 4px;
+
+  padding: 1.6rem;
+
+  background-color: #FF9500;
+  color: #FFF;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  
+}
+.screen2 button:hover, .screen3 button:hover {
+  background-color: #d88715;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.screen1 img:hover{
+  animation: shake 0.5s  ;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+.screen2 p, .screen3 p {
+  animation: appear 1s ;
+  animation-fill-mode: forwards ;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotateX(10deg);
+  }
+  25%{
+    transform: rotateY(10deg)
+  }
+  50% {
+    transform: rotateX(10deg);
+  }
+  100%{
+    transform: translateY(10deg)
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(400%);
+    scale: 0.3;
+    
+  }
+  
+}
